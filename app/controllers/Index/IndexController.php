@@ -1,0 +1,38 @@
+<?php
+   /**
+    * Controller Index
+	* @author Linea Comunicação com Design - http://www.lineacom.com.br
+    *
+    */
+   class IndexController extends ControllerBase{
+   	
+        /* Método Construtor do Controller(Obrigatório Conter em Todos os Controllers)
+		 * Params String Action -> Ação a ser Executada Pelo Controller	 	
+		 * Atenção Demais Métodos do Controller Devem ser Privados 
+		*/
+		public function IndexController($controller,$action,$urlparams){
+			 //Inicializa os parâmetros da SuperClasse
+			 parent::ControllerBase($controller, $action,$urlparams);			 
+			 //Envia o Controller para a action solicitada
+			 $this->$action();           
+		}
+		
+		/**
+	    * Ações Iniciais ao Entrar na Index deste Controller
+	    */
+	   private function index_action(){ 		   		
+	   		
+			//Solicita os dados dos banners
+			$recordset_banners = $this->Delegator('ConcreteIndex','getBanners');
+			
+			//Solicita os dados da agenda
+			$recordset_agenda = $this->Delegator('ConcreteIndex','getAgenda',array('limit' => 4));
+			
+			//Anexa os dados na view
+			$this->View()->assign('recordset_agenda',$recordset_agenda);			
+			$this->View()->assign('recordset_banners',$recordset_banners);			
+	   		//Apresenta a view
+		   	$this->View()->display('index.php');
+	   }
+}
+?>

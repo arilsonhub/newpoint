@@ -1,0 +1,34 @@
+<?php
+   /**
+    * Controller Index
+	* @author Linea Comunicação com Design - http://www.lineacom.com.br
+    *
+    */
+   class CentralatencaoalunoController extends ControllerBase{
+   	
+        /* Método Construtor do Controller(Obrigatório Conter em Todos os Controllers)
+		 * Params String Action -> Ação a ser Executada Pelo Controller	 	
+		 * Atenção Demais Métodos do Controller Devem ser Privados 
+		*/
+		public function CentralatencaoalunoController($controller,$action,$urlparams){
+			 //Inicializa os parâmetros da SuperClasse
+			 parent::ControllerBase($controller, $action,$urlparams);			 
+			 //Envia o Controller para a action solicitada
+			 $this->$action();           
+		}
+	   
+	   /**
+	    * Cadastra um novo registro na base de dados
+	    */
+	   private function cadastrar(){ 		   		
+	   		
+			//Verifica se uma requisição post foi disparada
+	        if($_SERVER['REQUEST_METHOD'] == "POST"){
+			 
+			     //Solicita a gravação dos dados do formulário
+			     $this->Delegator('CentralatencaoalunoDAO', 'cadastrar', $this->getPost());
+				 
+			}
+	   }
+}
+?>

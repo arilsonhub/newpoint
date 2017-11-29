@@ -1,0 +1,51 @@
+<?php
+   /**
+    * Controller Index
+	* @author Linea Comunicação com Design - http://www.lineacom.com.br
+    *
+    */
+   class AulademonstrativaController extends ControllerBase{
+   	
+        /* Método Construtor do Controller(Obrigatório Conter em Todos os Controllers)
+		 * Params String Action -> Ação a ser Executada Pelo Controller	 	
+		 * Atenção Demais Métodos do Controller Devem ser Privados 
+		*/
+		public function AulademonstrativaController($controller,$action,$urlparams){
+			 //Inicializa os parâmetros da SuperClasse
+			 parent::ControllerBase($controller, $action,$urlparams);			 
+			 //Envia o Controller para a action solicitada
+			 $this->$action();           
+		}
+		
+		/**
+	    * Ações Iniciais ao Entrar na Index deste Controller
+	    */
+	   private function index_action(){ 		   		
+	   		
+			//Solicita as informações do formulário
+			$recordset_horarios = $this->Delegator('AulademonstrativaInformacoesDAO','getHorarios');
+			$recordset_unidades = $this->Delegator('AulademonstrativaInformacoesDAO','getUnidades');
+			
+			//Anexa os dados na view
+			$this->View()->assign('dados_horarios',$recordset_horarios);
+			$this->View()->assign('dados_unidades',$recordset_unidades);
+	   		//Apresenta a view
+		   	$this->View()->display('aula_demonstrativa.php');
+	   }
+	   
+	   private function cadastrar(){
+	        
+			//Verifica se uma requisição post foi disparada
+	        if($_SERVER['REQUEST_METHOD'] == "POST"){
+			 
+			     //Solicita a gravação dos dados do formulário
+			     $this->Delegator('AulademonstrativaDAO', 'cadastrar', $this->getPost());
+				 
+			}else{
+			
+				//Apresenta a view
+				$this->View()->display('aula_demonstrativa.php');
+			}
+	   }
+}
+?>

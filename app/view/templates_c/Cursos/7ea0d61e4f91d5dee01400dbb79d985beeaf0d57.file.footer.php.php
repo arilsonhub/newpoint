@@ -1,0 +1,97 @@
+<?php /* Smarty version Smarty-3.1.1, created on 2014-03-23 01:09:50
+         compiled from "include\footer.php" */ ?>
+<?php /*%%SmartyHeaderCode:4462532e264e615349-96927588%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '7ea0d61e4f91d5dee01400dbb79d985beeaf0d57' => 
+    array (
+      0 => 'include\\footer.php',
+      1 => 1395449788,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '4462532e264e615349-96927588',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'URL_DEFAULT' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.1',
+  'unifunc' => 'content_532e264e653b5',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_532e264e653b5')) {function content_532e264e653b5($_smarty_tpl) {?>  <div id="rodape">
+  	<div id="rodape_esquerda">
+  		<img src="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+web_files/img/rodape.jpg" title="Imagens com logos da Newpoint de Informática e Inglês" alt="Logos da Newpoint, Ouro Moderno, Mascote da Newpoint e logotipo do Curso de Inglês Learnet" />
+  	</div>
+  	<div id="rodape_direita">
+  		<ul class="coluna">
+  			<!-- sempre colocar de 3 em 3 -->
+  			<!-- Links não definidos ainda-->
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+" title="Página inicial">HOME</a></li>
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+escola" title="Página institucional da escola">A ESCOLA</a></li>
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+cursos" title="Clique aqui para saber os nossos cursos">CURSOS</a></li>
+  			
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+unidades" title="Clique aqui para saber qual unidade mais perto de você">UNIDADES</a></li>
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+sac" title="Serviço de Atendimento ao Cliente, clique aqui e fale conosco">SAC</a></li>
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+album" title="Veja algumas fotos da Newpoint">GALERIA DE FOTOS</a></li>
+
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+aula-demonstrativa" title="Clique aqui e solicite uma aula demonstrativa">AULA DEMONSTRATIVA</a></li>
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+convenios" title="Clique aqui e conheça nossas empresas convêniadas">EMPRESAS CONVENIADAS</a></li>
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+teste" title="Clique aqui para fazer um teste de nivelamento de inglês">TESTE DE NIVELAMENTO</a></li>
+
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+area-do-aluno" title="Clique aqui para acessar a area do aluno">AREA DO ALUNO</a></li>
+  			<li><a href="" title="click here to start your self study in inglish">SELF STUDY</a></li>
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+trabalhe-conosco" title="Clique aqui e mande-nos um currículo">TRABALHE CONOSCO</a></li>
+
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+noticias" title="Clique aqui e sabia das nossas notícias">NOTICIAS</a></li>
+  			<li><a href="http://50.22.69.40/~learnetc/MML_NP/multimidia.html" title="clique aqui para fazer seus demas do multimidia">MULTIMIDIA</a></li>
+  			<li><a href="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+fazbem" title="Clique aqui e conheça o Newpoint Faz Bem">NEWPOINT FAZ BEM</a></li>
+  		</ul>
+  	</div>
+  	<div id="sucem"><p>Por <a href="http://www.facebook.com/sucem.atende" alt="link externo para o site do desenvolvedor" target="_blank"><span>Sucem</span> Consultoria</a></p></div>
+  </div>
+
+  <script type="text/javascript">
+     //URL DEFAULT PARA O JAVASCRIPT
+	 js_default_url = "<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+";
+  </script>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36690966-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  
+  
+  <script src="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+web_files/js/libs/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+web_files/js/libs/jquery.fancybox.pack.js" type="text/javascript"></script>  
+  <script src="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+web_files/js/plugins.js" type="text/javascript"></script>
+  <script src="<?php echo $_smarty_tpl->tpl_vars['URL_DEFAULT']->value;?>
+web_files/js/script.js" type="text/javascript"></script><?php }} ?>

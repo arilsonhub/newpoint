@@ -1,0 +1,21 @@
+<?php
+/**
+ * Model do Controller Index
+ * O objetivo desta classe é conectar O Controller com o seu Modelo de Abstração
+ * Que por sua vez conectará o Controller com a base de dados (Vide Classe Database)
+ * @author Linea Comunicação com Design - http://www.lineacom.com.br
+ *
+ */
+class ConcreteAgenda
+{	
+   public function getAgenda($parametros){
+   
+      return TableFactory::getInstance('Agenda')->getAgenda($parametros['limit']);
+   } 
+
+   public function getBanners(){
+	  
+	  return TableFactory::getInstance('Banners')->getBanners();
+   }
+}
+?>

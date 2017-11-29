@@ -1,0 +1,175 @@
+html{overflow-x:visible!important;}
+body{font-family:arial;background:url("../img/bg.png");overflow-x:visible;}
+
+a, a:active, a:visited{text-decoration:none;color:#000;cursor:pointer;}
+a:hover{text-decoration:underline;color:#000;}
+p{text-indent:15px;}
+ul, li{margin:0;padding:0;text-indent:0;list-style:none;}
+ul input{width:auto;}
+ul input, ul li{margin:5px;}
+
+#main{margin:10px auto 0 auto;width:800px;min-height:300px;height:auto;padding:5px;}
+#topo{width:800px;height:80px;margin:0 auto;border:1px solid;}
+#banner{width:800px;height:365px;margin:5px auto 0 auto;}
+#banner .nivo-controlNav{display:none;}
+
+.titulo{font-size:22px;}
+.borda{border:1px solid;}
+.escondido{display:none;}
+.vermelho{color:#f00;}
+.mensagem{margin:0 auto;color:#f00;}
+.mensagem.sucesso{margin:0 auto;color:#129700;}
+
+form div{width:100%;float:left;margin-bottom:5px;}
+legend{font-size:10px;margin:0 0 0 30px;}
+.direita{text-align:right;}
+.esquerda{text-align:left;}
+legend span a, legend span a:hover, legend span a:visited{color:#FF0000;}
+input:hover, input:focus {border-color:#89c9ff;outline-style: none;}
+textarea{width:176px;height:80px;outline-style: none;}
+textarea:focus, textarea:hover {width:176px;height:80px;border-color:#89c9ff;}
+input[type="text"],input[type="password"]{width:175px;outline-style: none;}
+select {width: 302px;margin-right: 5px;outline-style: none;}
+button{height:30px;outline-style: none;}
+input, select, textarea{border:1px solid;border-radius:5px;outline-style: none;}
+label{cursor:pointer;}
+input.error, select.error, textarea.error{border:1px solid #f00;height:20px;width:100%;outline-style: none;}
+input+label.error, select+label.error,textarea+label.error{float:left;width:100%;display: inline-block;font-size:14px;color:#f00;}
+input[type="file"]{width:305px;box-sizing:border-box;height:27px;outline-style: none;}
+/*.error+.error{display: none!important;}*/
+
+table{margin:20px auto;border: 2px solid #ccc;width:900px;color:#fff;font-weight:bold;text-align:center;font-size:12px;}
+table p{margin:0;padding:0;text-indent:0px;}
+table a, table a:active, table a:visited, table a:hover{color:#666;}
+
+tr{background: #fff;}
+td, th{padding:5px 10px;}
+th{background:#999;}
+th a, th a:active, th a:visited, th a:hover{color:#fff;}
+td{color:#666;}
+tr:hover{background:#f1f1f1;}
+td.acao{width:50px;}
+
+/* Estilo para o topo do cms */
+#admin_topo{width:100%;height:50px;border-bottom:1px solid;}
+
+/* Estilos para o menu do cms */
+#admin_menu {width:800px;overflow:hidden;margin:0 auto 0 auto;position:relative;}
+ul#navigation {z-index:-999999;}
+ul#navigation li {width:95px;display:inline;float:left;}
+ul#navigation li a {display:block;float:left;margin-top:-2px;width:94px;height:5px;background:#CCE8FD;border:1px solid #ccc;text-align:center;padding-top:78px;}
+ul#navigation li a:hover{background:#eee;}
+ul#navigation li a span{font:bold 10px Arial, Helvetica, sans-serif;color: #333;display:block;}
+ul#navigation li a img.img-tab{*margin:-50px 0 10px 25px;*margin: -50px 0 10px 0;display:block;margin:-55px auto 10px auto;}
+
+/* Estilo para o formulário do cms */
+#form_cms{width:300px;margin:0 auto;text-align:right;}
+#form_cms input, #form_cms label, #form_cms select{margin:5px;}
+
+/* Estilo para o formulário da página do professor */
+#form_cms_prof{width:500px;margin:15px 0 0 10px;text-align:right;}
+#form_cms_prof input{width:350px;}
+#form_cms_prof select{width:350px;}
+#form_cms_prof textarea{width:345px;}
+#form_cms_prof button{height:30px;}
+#form_cms_prof input, #form_cms_prof label, #form_cms_prof select, #form_cms_prof textarea{margin:5px;}
+#form_cms_prof input.radio{width:20px;}
+
+/* Estilos admin */
+/*usuarios*/
+#usuarios_visualizar{margin:-20px 0 0 0;}
+#usuarios_cadastrar{margin:-20px 0 0 0;}
+#form_tamanho{width:400px;margin:0 auto;}
+
+#form_cms_admin fieldset{text-align:right;}
+#form_cms_admin input{width:300px;margin:5px;}
+#form_cms_admin select{width:302px;margin:5px;}
+#form_cms_admin:first-child{margin-top:15px;}
+#lugar_botao{text-align:right;margin:5px 4px 5px 5px;}
+#form_cms_prof #ckeditor{width:345px;margin:0px 0px 10px 148px;}
+#form_cms_prof #label_texto{float:left;margin-left:76px;}
+
+
+/* Estilo menu */
+#iconbar li {float:left;position:relative;overflow: hidden;margin-right:20px;background:#E8E8F9;border: 1px dashed #ffc0ff;}
+#iconbar a {text-decoration: none;outline: none;color:#d00000;display: block;width: 24px;padding: 10px;cursor:pointer;}
+#iconbar span {width: 100px;height: 35px;position: absolute;display: none;line-height:25px;color:#409BED;padding-left: 10px;}
+
+#formulario_banner{margin:-20px 0 0 0;}
+
+#formulario_foto{width:600px;}
+#formulario_foto fieldset{text-align:right;}
+#formulario_foto input[type="text"],#formulario_foto input[type="password"], #formulario_foto select{width:300px;margin:5px;}
+#formulario_foto button{margin:0px 5px 5px 5px;}
+#formulario_foto .subtitulo{text-align:center;}
+
+#textos_site #textos_missao{width:500px;}
+#textos_site #textos_missao textarea, #textos_site #textos_valores textarea, #textos_site #textos_visao textarea, #textos_site #textos_fazbem textarea, #textos_site #textos_convenios textarea{width:500px;height:200px;padding:5px;margin:5px 0 10px 0;}
+
+#formulario_convenios{width:500px;}
+#formulario_convenios fieldset{text-align:right;}
+#formulario_convenios input{width:300px;margin:5px;}
+#formulario_convenios select{width:302px;margin:5px;}
+#formulario_convenios button{margin:0px 5px 5px 5px;}
+#formulario_convenios .subtitulo{text-align:center;}
+
+#tabela-convenios{margin:-20px 0 0 0;}
+
+#visualizar_noticia_admin{margin:-20px 0 0 0;}
+#formulario_convenios input#visivel{width:13px;}
+
+#form_cms_prof_album{width:500px;}
+#form_cms_prof_album fieldset{text-align:right;}
+#form_cms_prof_album input{width:300px;margin:5px;}
+#form_cms_prof_album select{width:302px;margin:5px;}
+#form_cms_prof_album button{margin:0px 5px 5px 5px;}
+#form_cms_prof_album textarea{margin:5px 5px 5px 5px;width:295px;}
+#descricao-data{font-size:12px;color:#f00;margin:0 235px 0 0;}
+
+#form_cms_prof_fotos{width:600px;}
+#form_cms_prof_fotos fieldset{text-align:right;}
+#form_cms_prof_fotos input{width:350px;margin:5px;}
+#form_cms_prof_fotos button{margin:0px 5px 5px 5px;}
+#form_cms_prof_fotos textarea{margin:5px 5px 5px 5px;width:295px;}
+
+#excluir-fotos caption{font-size:14px;font-weight:bold;color:#000;}
+
+#div_cursos{width:500px;margin:15px 0 0 10px;text-align:right;}
+#div_cursos input{width:350px;}
+#div_cursos select{width:350px;}
+#div_cursos textarea{width:345px;}
+#div_cursos button{height:30px;}
+#div_cursos input, #div_cursos label, #div_cursos select, #div_cursos textarea{margin:5px;}
+#div_cursos #ckeditor{width:345px;margin:0px 0px 10px 148px;}
+#div_cursos #label_texto{float:left;margin-left:76px;}
+
+#div_pacotes{margin:0 auto;width:715px;}
+#pacotes_esquerda{width:215px;height:auto;float:left;}
+#pacotes_esquerda li, #pacotes_esquerda input{margin:5px;}
+
+#pacotes_direita{width:500px;height:auto;float:left;}
+#pacotes_direita li, #pacotes_direita input{margin:5px;}
+#pacotes_direita li{display:inline-block;width:200px;}
+
+#pacotes_botao{margin:5px 0 20px 0;}
+
+#form_cms_prof_ing{width:600px;margin:15px 0 0 10px;text-align:right;}
+#form_cms_prof_ing input{width:350px;}
+#form_cms_prof_ing select{width:350px;}
+#form_cms_prof_ing textarea{width:345px;}
+#form_cms_prof_ing button{height:30px;}
+#form_cms_prof_ing input, #form_cms_prof_ing label, #form_cms_prof_ing select, #form_cms_prof_ing textarea{margin:5px;}
+#form_cms_prof_ing input.radio{width:20px;}
+#form_cms_prof_ing input.resposta{width:250px;}
+
+.activeWrapper{
+	float: left;
+	width: 100px;
+	padding-left: 0px;
+}
+.ativoFakeLabel{
+	width: 285px;
+	display: inline-block;
+	text-align: right;
+	float: left;
+}
